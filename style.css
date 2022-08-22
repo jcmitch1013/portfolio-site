@@ -1,0 +1,162 @@
+html {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  max-width: 100%;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0),
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0)
+    ),
+    url(imgs/background-img.png);
+
+  background-size: cover;
+  overflow: auto;
+}
+
+/*.top-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-top: 1%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+.logo {
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 5%;
+  width: 15%;
+}
+
+nav {
+  position: sticky;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 50%;
+}
+
+.home-page {
+  width: 100%;
+
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-text-img {
+  float: left;
+  width: 50%;
+  margin-left: 5%;
+  top: 1%;
+}
+
+#selfie {
+  width: 25%;
+  height: 25%;
+  margin-right: 10%;
+  border-radius: 50%;
+
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-page {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.who-i-am {
+  width: 100%;
+  margin-top: 10%;
+  margin: auto;
+  text-align: center;
+
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+}
+
+#survey-link {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#survey-cta {
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#survey-btn {
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.selfie-3d {
+  display: block;
+  margin: auto;
+  margin-top: 40%;
+  width: 20%;
+  height: 5%;
+  padding: 0;
+  box-shadow: 0px 0px 10px 1px;
+}

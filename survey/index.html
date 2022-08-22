@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="process.php" method="post">
+      <h1 class="title">Client Questionairre</h1>
+
+      <div class="names">
+        <label for="fname">Full name:</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="bname">Name of Business/Brand:</label>
+        <input type="text" id="bname" name="bname" /><br />
+      </div>
+
+      <div class="questions">
+        <label for="describe"
+          >In 1-2 sentences, how would you describe your brand?</label
+        ><br />
+        <textarea id="describe" name="describe"></textarea>
+        <br />
+
+        <label for="competitors"
+          >If applicable, what are some examples of your competitors in this
+          field.</label
+        ><br />
+        <textarea id="competitors" name="competitors"></textarea>
+        <br />
+
+        <label for="audience">Who is your brand's target audience?</label><br />
+        <textarea id="audience" name="audience"></textarea>
+        <br />
+
+        <label for="different">How is your brand different?</label><br />
+        <textarea id="different" name="different"></textarea><br />
+      </div>
+
+      <input type="submit" id="myBtn" />
+    </form>
+
+    <!-- <h3>Which of these characteristics describe your business?</h3>
+
+<h4>A: Colorful<br/> B: Monochrome</h4>
+<input type="radio" name="food" /> : A<br />
+<input type="radio" name="food" /> : B<br />
+
+<h4>A: Simple<br/> B: Intricate</h4>
+<input type="radio" name="food" /> : A<br />
+<input type="radio" name="food" /> : B<br />
+
+<h4>A: Modern<br/> B: Classic/Traditional</h4>
+<input type="radio" name="food" /> : A<br />
+<input type="radio" name="food" /> : B<br />-->
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
